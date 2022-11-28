@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import '../styles/globals.css'
 import { AppProps } from 'next/app'
+import styles from '../styles/Home.module.css'
 
 export default function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -32,7 +33,17 @@ export default function MyApp({ Component, pageProps }: AppProps) {
         <link rel="apple-touch-icon" href="/apple-icon.png"></link>
         <meta name="theme-color" content="#317EFB" />
       </Head>
-      <Component {...pageProps} />
+
+      <div className={styles.container}>
+        <header className="border-b-2 pb-3">
+          <h1 className={styles.branding}>TrolleyFriend</h1>
+        </header>
+        
+        <Component {...pageProps} />
+      </div>
+      <div className="h-20 bg-slate-300 w-screen">
+        <h2>Add</h2>
+      </div>
     </>
   )
 }

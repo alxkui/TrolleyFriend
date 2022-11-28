@@ -2,12 +2,18 @@ import styles from '../styles/Home.module.css'
 
 export default function Home() {
   return (
-    <div>
-      <main>
-        <h1 className="text-3xl font-bold underline">
-          TrolleyFriend
-        </h1>
-      </main>
-    </div>
+    <main>
+      <div className={styles.list}>
+        <ul>
+          <li>Potatoes</li>
+          <li>Rice</li>
+          <li>Celery</li>
+          <li>Chilli</li>
+          <li>Rice</li>
+          <li>Celery</li>
+          <li>Chilli</li>
+        </ul>
+      </div>
+    </main>
   )
 }
