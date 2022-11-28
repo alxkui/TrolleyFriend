@@ -2,6 +2,7 @@ import Head from 'next/head'
 import '../styles/globals.css'
 import { AppProps } from 'next/app'
 import styles from '../styles/Home.module.css'
+import Link from 'next/link'
 
 export default function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -38,11 +39,15 @@ export default function MyApp({ Component, pageProps }: AppProps) {
         <header className="border-b-2 pb-3">
           <h1 className={styles.branding}>TrolleyFriend</h1>
         </header>
-        
+
         <Component {...pageProps} />
       </div>
-      <div className="h-20 bg-slate-300 w-screen">
-        <h2>Add</h2>
+      <div className="h-20 bg-slate-800 w-screen absolute justify-center bottom-0 flex">
+        <div className="flex justify-between items-center w-9/12">
+          <Link href="#" className="text-white">Storage</Link>
+          <Link href="#" className="text-white font-bold">ADD</Link>
+          <Link href="#" className="text-white">Shopping List</Link>
+        </div>
       </div>
     </>
   )

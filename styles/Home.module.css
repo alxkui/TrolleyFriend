@@ -1,5 +1,4 @@
 .container {
-  min-height: 100vh;
   padding: 0.5rem 1rem;
 }
 
@@ -16,4 +15,7 @@
 .list ul li {
   margin: 0.8rem 0rem;
   font-size: 1.2rem;
+  padding: 1rem;
+  border: 1px solid rgb(225, 225, 225);
+  border-radius: 5px;
 }

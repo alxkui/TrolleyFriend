@@ -3,6 +3,7 @@ import styles from '../styles/Home.module.css'
 export default function Home() {
   return (
     <main>
+      <h2 className="text-4xl mb-8 mt-8 font-black">Storage</h2>
       <div className={styles.list}>
         <ul>
           <li>Potatoes</li>
