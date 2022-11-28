@@ -44,9 +44,9 @@ export default function MyApp({ Component, pageProps }: AppProps) {
       </div>
       <div className="h-20 bg-slate-800 w-screen absolute justify-center bottom-0 flex">
         <div className="flex justify-between items-center w-9/12">
-          <Link href="#" className="text-white">Storage</Link>
+          <Link href="/" className="text-white">Storage</Link>
           <Link href="#" className="text-white font-bold">ADD</Link>
-          <Link href="#" className="text-white">Shopping List</Link>
+          <Link href="shopping" className="text-white">Shopping List</Link>
         </div>
       </div>
     </>
